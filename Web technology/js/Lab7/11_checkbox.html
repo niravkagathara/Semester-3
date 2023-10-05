@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="absent">
+
+    </div>
+    <div id="class-a">
+
+    </div>
+    <script>
+        for(let a=101;a<165;a++){
+           document.getElementById('class-a').innerHTML+='<input type="checkbox" checked name="a" value='+a+' onclick="AB(this)" >'+a+'&emsp;&emsp;'
+            if((a)%5==0){
+                document.getElementById('class-a').innerHTML+='</br>'
+            }
+        }
+
+        function AB(){
+            var abc = document.getElementsByTagName('input');
+            var absent = document.getElementById("absent");
+            absent.innerHTML='';
+            for(i=0;i<abc.length;i++){
+                if(abc[i].checked==false){
+                    absent.innerHTML+=abc[i].value
+                }
+            }
+        }
+    </script>
+</body>
+</html>

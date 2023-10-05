@@ -1,0 +1,5 @@
+In an array of 20 element arrange 15 diff values which are generated randomlu betn 100000 to 999999.
+Use Hash function to generate key & linear probing to avoid collision. H(x) = (x mod 18)+2
+WAP to input & display the functional valueof array.
+
+Implement a Dictionary(key, value) pair using BST.

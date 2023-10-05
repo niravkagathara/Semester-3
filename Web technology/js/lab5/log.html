@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #t1{
+        margin-top: 28vh;
+        border: solid 10px rgb(126, 22, 22, 0.489) ;
+        height: 45vh;
+        
+        background-color: rgb(14, 169, 220);
+    }
+    #table{
+        
+    }
+    #td1{
+        font-style: oblique;
+    }
+    #body{
+        background-color: skyblue;
+    }
+    #submit{
+        
+    }
+    
+
+
+</style>
+<body id="body">
+    <table id="t1" align="center">
+        <tr id="tr1">
+            <td id="td1">
+                Name:-
+            </td>
+            <td id="td2">
+                <input type="text" id="name" style="height: 20px;">
+            </td>
+        </tr>
+        <tr>
+            <td id="td1">
+                Password:-
+            </td>
+            <td id="td2">
+                <input type="text" id="password" style="height: 20px;">
+            </td>
+        </tr>
+        
+        <tr>
+            <td id="submit" colspan="2" align="center">
+                <input onclick="submit1()" type="button" id="s1"value="submit" style="width: 50%; font-style: oblique;" >
+            </td>
+        </tr>
+    </table> 
+    <script>
+        function submit1()
+        {   
+            n = document.getElementById("name").value
+            pass = document.getElementById("password").value
+             if(n=="nirav" && pass=="nirav12"){
+              alert("valid")
+        }
+        else{
+            alert('invalid')
+        }
+    }
+        
+    </script>
+    
+</body>
+</html>

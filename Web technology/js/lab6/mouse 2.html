@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: red;
+        }
+    </style>
+   
+</head>
+<body>
+    <input type="button" id="b1" onmouseenter="on()" value="seenter">
+    <input type="button" id="b1" ondblclick="dbl()" value="Double click">
+    <input type="button" id="b1" onmousedown="down()" value="Mouse Down">
+    <input type="button" id="b1" onmousemove="move()" value="Mouse Move">
+    <input type="button" id="b1" onmouseover="over()" value="Mouse Over">
+    <input type="button" id="b1" onmouseout="out()" value="Mouse Out">
+    <input type="button" id="b1" onmouseup="up()" value="Mouse Up">
+
+    <script>
+        const b = document.getElementById("b1");
+        function on(){
+            document.body.style.backgroundColor ="blue";
+        }
+        function dbl(){
+            document.body.style.backgroundColor ="green";
+        }
+        function down(){
+            document.body.style.backgroundColor ="yellow";
+        }
+        function move(){
+            document.body.style.backgroundColor ="pink";
+        }
+        function over(){
+            document.body.style.backgroundColor ="white";
+        }
+        function out(){
+            document.body.style.backgroundColor ="gray";
+        }
+        function up(){
+            document.body.style.backgroundColor ="black";
+        }
+
+    </script>
+</body>
+</html>

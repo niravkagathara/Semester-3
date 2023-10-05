@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Car {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+            printDetail() {
+                document.write(this.name + " ");
+                document.write(this.year);
+            }
+        }
+
+        const car1 = new Car("Audi", 2022);
+        car2 = new Car("BMW", 2020);
+        car1.printDetail()
+        document.write("<br>")
+        car2.printDetail()
+    </script>
+</body>
+
+</html>

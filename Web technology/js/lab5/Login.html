@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+</head>
+<body >
+    <div class="Main">
+        <label>Email</label><br>
+          <input id="Email" type="email"><br>
+        <label>Username</label><br>
+          <input id="Username" type="text"><br>
+        <label>Password</label><br>
+          <input type="password"><br>
+        <label>Age</label><br>
+          <input type="number" min="0"><br>
+        <label>Enrollment No</label><br>
+          <input type="text"></br>
+        <input onclick="Submit()" type="button" value="Submit">
+    </div>
+    <script>
+        function Submit() {
+            u=document.getElementById("Username")
+            Pattern1 = "^[A-Z a-z 0-9]$"
+            Patternobj1=RegExp(Pattern1)
+            if(Patternobj1.test(u.value)){
+                u.style.background = "green"
+            }
+            else{
+                u.style.background = "red"
+            }
+
+            e=document.getElementById("Email")
+            Pattern2 = "^[^\s@]+@[^\s@]+\.[^\s@]$"
+            Patternobj2=RegExp(Pattern2)
+            if(Patternobj2.test(e.value)){
+                e.style.background = "green"
+            }
+            else{
+                e.style.background = "red"
+            }
+
+            u=document.getElementById("password") 
+            Pattern3 = "^[A-Z a-z 0-9]+^[!@#$%^&*_=+-].{8,16}$"
+            Patternobj3=RegExp(Pattern3)
+            if(Patternobj3.test(u.value)){
+                u.style.background = "blue"
+            }
+            else{
+                u.style.background = "orange"
+            }
+
+            r=document.getElementById("password") 
+            Pattern4 = "/^[a-z A-Z 0-9]+!@#\$%\^\&*_=+-]{8,12}$/"
+            Patternobj4=RegExp(Pattern4)
+            if(Patternobj4.test(u.value)){
+                u.style.background = "green"
+            }
+            else{
+                u.style.background = "red"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+[{
+  "_id": {
+    "$oid": "64e5929f6e6f285e9e4a35bf"
+  },
+  "EID": 1,
+  "ENAME": "Nick",
+  "GENDER": "Male",
+  "JOININGDATE": "2013-01-01T00:00:00",
+  "SALARY": 4000,
+  "CITY": "London"
+},{
+  "_id": {
+    "$oid": "64e5929f6e6f285e9e4a35c0"
+  },
+  "EID": 2,
+  "ENAME": "Julian",
+  "GENDER": "Female",
+  "JOININGDATE": "2014-10-01T00:00:00",
+  "SALARY": 3000,
+  "CITY": "New York"
+},{
+  "_id": {
+    "$oid": "64e5929f6e6f285e9e4a35c1"
+  },
+  "EID": 3,
+  "ENAME": "Roy",
+  "GENDER": "Male",
+  "JOININGDATE": "2016-06-01T00:00:00",
+  "SALARY": 3500,
+  "CITY": "London"
+},{
+  "_id": {
+    "$oid": "64e5929f6e6f285e9e4a35c2"
+  },
+  "EID": 4,
+  "ENAME": "Tom",
+  "GENDER": "Male",
+  "SALARY": 4500,
+  "CITY": "London"
+},{
+  "_id": {
+    "$oid": "64e5929f6e6f285e9e4a35c3"
+  },
+  "EID": 5,
+  "ENAME": "Jerry",
+  "GENDER": "Male",
+  "JOININGDATE": "2013-02-01T00:00:00",
+  "SALARY": 2800,
+  "CITY": "Sydney"
+},{
+  "_id": {
+    "$oid": "64e5929f6e6f285e9e4a35c4"
+  },
+  "EID": 6,
+  "ENAME": "Philip",
+  "GENDER": "Male",
+  "JOININGDATE": "2015-01-01T00:00:00",
+  "SALARY": 7000,
+  "CITY": "New York"
+},{
+  "_id": {
+    "$oid": "64e5929f6e6f285e9e4a35c5"
+  },
+  "EID": 7,
+  "ENAME": "Sara",
+  "GENDER": "Female",
+  "JOININGDATE": "2017-08-01T00:00:00",
+  "SALARY": 4800,
+  "CITY": "Sydney"
+},{
+  "_id": {
+    "$oid": "64e5929f6e6f285e9e4a35c6"
+  },
+  "EID": 8,
+  "ENAME": "Emily",
+  "GENDER": "Female",
+  "JOININGDATE": "2015-01-01T00:00:00",
+  "SALARY": 5500,
+  "CITY": "New York"
+},{
+  "_id": {
+    "$oid": "64e5929f6e6f285e9e4a35c7"
+  },
+  "EID": 9,
+  "ENAME": "Michael",
+  "GENDER": "Male",
+  "SALARY": 6500,
+  "CITY": "London"
+},{
+  "_id": {
+    "$oid": "64e5929f6e6f285e9e4a35c8"
+  },
+  "EID": 10,
+  "ENAME": "John",
+  "GENDER": "Male",
+  "JOININGDATE": "2015-01-01T00:00:00",
+  "SALARY": 8800,
+  "CITY": "London"
+}]

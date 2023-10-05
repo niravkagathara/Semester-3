@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        a = new Array()
+        temp=5
+        for (i = 0; i < 5; i++) {
+            a[i] = parseInt(prompt("Enter element : "))
+        }
+        for (j = 5; j > (temp-1); j--) {
+            for (i = 0; i < 5; i++) {
+                if (a[i] > a[i + 1]) {
+                    temp = a[i + 1]
+                    a[i + 1] = a[i]
+                    a[i] = temp
+
+                }
+            }
+        }
+        for (i = 0; i < 5; i++) {
+            document.write(a[i])
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #ans {
+            height: 20px;
+            text-align: right;
+        }
+
+        input {
+            width: 100%;
+            background: red;
+        }
+
+        input:hover {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" width="22%" align="center">
+        <tr>
+            <td colspan="4" id="ans"> </td>
+        </tr>
+        <tr>
+            <td><input onclick="addNo (this.value)" type="button" value="7" /></td>
+            <td><input onclick="addNo (this.value)" type="button" value="8" /></td>
+            <td><input onclick="addNo (this.value)" type="button" value="9" /></td>
+            <td><input onclick="addNo (this.value)" type="button" value="+" /></td>
+        </tr>
+
+        <tr>
+            <td><input onclick="addNo(this.value)" type="button" value="4" /></td>
+            <td><input onclick="addNo (this.value)" type="button" value="5" /></td>
+            <td><input onclick="addNo(this.value)" type="button" value="6" /></td>
+            <td><input onclick="addNo(this.value)" type="button" value="-" /></td>
+        </tr>
+
+        <tr>
+            <td><input onclick="addNo(this.value)" type="button" value="1" /></td>
+            <td><input onclick="addNo(this.value)" type="button" value="2" /></td>
+            <td><input onclick="addNo (this.value)" type="button" value="3" /></td>
+            <td><input onclick="addNo(this.value)" type="button" value="*" /></td>
+        </tr>
+        <tr>
+            <td><input onclick="clearAns ()" type="button" value="C" /></td>
+            <td><input onclick="addNo(this.value)" type="button" value="0" /></td>
+            <td><input onclick="generateAns ()" type="button" value="-" /></td>
+            <td><input onclick="addNo (this.value)" type="button" value="/" /></td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        function addNo(num) {
+            ans = document.getElementById('ans')
+            ans.innerHTML += num
+        }
+        function clearAns() {
+            ans = document.getElementById('ans')
+            ans.innerHTML = ""
+        }
+        function generateAns() {
+            ans = document.getElementById('ans') 
+                finalAns eval(ans.innerHTML)
+            ans.innerHTML = finalAns;
+        }
+    </script>
+</body>
+
+</html>

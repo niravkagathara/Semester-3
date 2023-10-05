@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facuilty
+        
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <script>
+        a = [
+            ["gurav vala" , 4.20 ,"https://darshan.ac.in/U01/Student-Photo/200540107517---25-06-2022-05-38-28.JPG"],
+            ["shrey gandhi" , 4.80 ,"https://darshan.ac.in/U01/Student-Photo/190540107064---25-06-2022-05-54-52.JPG"],
+            ["rajan pandya" , 7 ,"https://darshan.ac.in/U01/Student-Photo/190540107148---11-05-2022-10-24-16.JPG"],
+        ];
+        
+    </script>
+    <div class="container">
+        <div class="row">
+            <script>
+                for(fac of a){
+                    document.write('<div class="col-3 card">');
+                        document.write('<img src="'+fac[2]+'" class="card-img-top" alt="...">');
+                        document.write('<div class="card-body">')
+                        document.write('<h5 class="card-title">'+fac[0]+'</h5>')
+                        document.write('<p class="card-text">student</p>')
+                        document.write('<a href="#" class="btn btn-primary">placement=CTC '+fac[1]+' lakh</a>')
+                        document.write(' </div>')
+                        document.write(' </div>')
+                        
+                }
+            </script>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ko" onmouseover="co()" onmouseout="co2()">karan</h1>
+    <h1 id="date">Click to Button</h1>
+    <button id="btn1" onclick="time()">Date_Time</button>
+    <h1></h1>
+    <button onclick="redcolor()">red</button>
+    <button onclick="green()">green</button>
+    <script>
+        let v = document.getElementById("ko");
+        
+        const co=()=>{
+            v.style.color="yellow"
+        }
+        const co2=()=>{
+            v.style.color="black"
+        }
+
+        const time=()=>{
+            let dat = document.getElementById("date");
+            const d = new Date();
+            dat.innerHTML=d;
+        }
+
+        function redcolor(params) {
+            document.body.style.backgroundColor="red"
+        }
+        function green(params) {
+            document.body.style.backgroundColor="green"
+        }
+    </script>
+</body>
+</html>

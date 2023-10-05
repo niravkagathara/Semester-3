@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="button" value="Start BG" onclick="startCounter()">
+    <input type="button" value="Stop BG" onclick="stopCounter()">
+    <input type="button" value="Start FG" onclick="startFG()">
+    <input type="button" value="Stop FG" onclick="stopFG()">
+    <script type="text/javascript">
+        var c = 2;
+        function myFun() {
+            r = Math.ceil(Math.random() * 255)
+            g = Math.ceil(Math.random() * 255)
+            b = Math.ceil(Math.random() * 255)
+            document.body.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")"
+        }
+        function startCounter() {
+            c = setInterval(myFun, 500);
+        }
+        function stopCounter() {
+            clearInterval(c);
+        }
+        function myFG() {
+            r = Math.ceil(Math.random() * 255)
+            g = Math.ceil(Math.random() * 255)
+            b = Math.ceil(Math.random() * 255)
+            document.getElementById("para").style.color = "rgb(" + r + "," + g + "," + b + ")"
+        }
+        function startFG() {
+            c2 = setInterval(myFG, 500);
+        }
+        function stopFG() {
+            clearInterval(c2);
+        }
+
+
+    </script>
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit neque, porro nulla quidem, ex
+        facere dolore odit inventore quos alias cumque minus, voluptatibus deleniti ipsum cupiditate. Consequuntur,
+        obcaecati amet!</p>
+</body>
+
+</html>

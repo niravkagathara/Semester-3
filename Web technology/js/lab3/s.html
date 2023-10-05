@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>function searchWord(sentence, word) {
+        for (let i = 0; i < sentence.length; i++) {
+          if (sentence[i] === word) {
+            return i;
+          }
+        }
+        return -1; // return -1 if the word is not found
+      }
+      
+      const sentence = ["The", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"];
+      const word = "fox";
+      const index = searchWord(sentence, word);
+      
+      if (index !== -1) {
+        console.log(`The word "${word}" was found at index ${index} in the sentence.`);
+      } else {
+        console.log(`The word "${word}" was not found in the sentence.`);
+      }
+      </script>
+</body>
+</html>

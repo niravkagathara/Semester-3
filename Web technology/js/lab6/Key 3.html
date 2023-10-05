@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: tahoma;
+            background: linear-gradient(to right,  rgb(88, 88, 222) , green); 
+            background: linear-gradient(to right, rgb(88, 88, 222), green); 
+        }
+
+        #form{
+            width: 250px;
+            margin: 100px auto 0 auto;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 25px;
+            background-color: rgba(0,0,0,.1);
+            color:white;
+            box-shadow: -2px 2px 15px black;
+        }
+
+        input{
+            width: 225px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 8px;
+            background-color: white;
+            box-shadow: -2px 2px 15px black;
+        }
+    </style>
+    <div id="form">
+        <h1 id="h1">
+            keyboard event
+        </h1>
+        <p> onclikdown </p>
+        <input type="text" onkeydown="alert(this.value);">
+
+         <p> onclikup </p>
+        <input type="text"onkeyup="alert(this.value);">
+        
+        <p> onclikpress </p>
+        <input type="text"onkeypress="alert(this.value);"> 
+    </div>
+</body>
+</html>

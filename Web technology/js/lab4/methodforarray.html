@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = ["Nirav", "Meet", "Sahil"]
+        a.pop()
+        document.write("pop:"+a)
+        document.write("</br>")
+
+        let b = ["Nirav", "Meet", "Sahil"]
+        b.push("Jeel")
+        document.write("push:"+b)
+        document.write("</br>")
+
+        let c = ["Nirav", "Meet", "Sahil"]
+        c.shift()
+        document.write("shift:"+c)
+        document.write("</br>")
+
+        let d = ["Nirav", "Meet", "Sahil"]
+        d.unshift("Nishit")
+        document.write("unshift:"+d)
+        document.write("</br>")
+
+        let e = ["Nirav", "Meet", "Sahil"]
+        e = e.slice(1,2)
+        document.write("slice:"+e)
+        document.write("</br>")
+
+        let f = ["Nirav", "Meet", "Sahil"]
+        f.splice(1,2)
+        document.write("splice:"+f)
+        document.write("</br>")
+
+        let g = ["Nirav", "Meet", "Sahil"]
+        let h = ["a", "b", "c"]
+        i = g.concat(h)
+        document.write("concet:"+i)
+        document.write("</br>")
+    </script>
+</body>
+</html>

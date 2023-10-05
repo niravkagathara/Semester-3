@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Enter Element in Array :</h2>
+    <input type="text" name="" id="ele" placeholder="Enter element">
+    <input type="button" value="Enter" name="" id="e" onclick="createelement()">
+
+    <h2>Display element : </h2>
+    <table id="display">
+
+    </table>
+
+    <h2>Delete element :</h2>
+    <input type="text" id="removeIndex" placeholder="Enter index">
+    <input type="button" value="Enter for delete" onclick="deleteElement()">
+
+    <h2>Update element :</h2>
+    <input type="text" id="updateIndex" placeholder="Enter index">
+    <input type="text" id="upadateValue" placeholder="Enter value to update">
+    <input type="button" value="Enter for update" onclick="updateElement()">
+    <br/>
+    <script>
+        array=[]
+        function createelement(){
+            item = document.getElementById('ele').value
+            array.push(item)
+            displayelement()
+            document.getElementById('ele').value = "";
+        }
+        function displayelement(){
+            displaytable = document.getElementById('display')
+            displaytable.innerHTML = " "
+            for(a of array){
+                display.innerHTML += "<tr><td>"+array+"</td></tr>"
+            }
+        }
+        function deleteElement() {
+            index = document.getElementById('removeIndex').value
+            array.splice(index,1)
+            displayelement()
+            document.getElementById('removeIndex').value = "";
+        }
+        function updateElement() {
+            index = document.getElementById('updateIndex').value
+            newValue = document.getElementById('upadateValue').value   
+            if(array.length>index){
+            array[index]= newValue
+            displayelement()
+            document.getElementById('updateIndex').value = "";
+            document.getElementById('upadateValue').value = "";
+            }
+        }
+    </script>
+</body>
+</html>

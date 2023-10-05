@@ -1,0 +1,30 @@
+.main{
+    margin-top: 7vh;
+    margin-left: 79vh;
+    width: 45vh;
+    background-color: bisque;
+}
+.dis{
+    height: 8vh;
+    width: 45vh;
+    background-color: black;
+    color: aliceblue;
+    border: 0px;
+    font-size: xx-large;
+}
+.dism{
+    height: 6vh;
+    width: 45vh;
+    background-color: black;
+    color: aliceblue;
+    border: 0px;
+}
+.btn{
+    margin-top: 1vh;
+    width: 10vh;
+    height: 17vh;
+    font-size: xx-large;
+}
+.btnd{
+    margin-top: 6vh;
+}

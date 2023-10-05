@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstronge</title>
+</head> 
+<body>
+    <script>
+        var a = parseInt(prompt("Enter a number : "))
+        var temp =a 
+        var digit = 0
+        var tempdigit = 0
+        var power = 0
+        while(a!=0){
+            power= parseInt(a%10)
+            a = parseInt(a/10)
+        }
+        while(a!=0){
+            digit= parseInt(a%10)
+            for(var i =1 ; i<=power ; i++){
+                digit = digit * digit
+            }
+            tempdigit = tempdigit + (digit)
+            a = parseInt(a/10)
+        }
+        if(tempdigit = temp){
+            document.write("Armstronge")
+        }
+        else{
+            document.write(" Not Armstronge")
+        }
+    </script>
+</body>
+</html>

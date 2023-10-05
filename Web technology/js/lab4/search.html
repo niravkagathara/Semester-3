@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        
+        
+        function searchWord(z, a) {
+            for (let i = 0; i < z.length; i++) {
+                if (z[i] === a) {
+                    return i;
+                }
+            }
+            return -1; // return -1 if the word is not found
+        }
+
+        const t = prompt("enter string is ")
+        document.write("string is=" + t)
+            z=t.split(" ")
+        const p = prompt("enter you want to search number")
+        document.write("<br/>search number is" + p+"<br/>")
+         a=p.split("")
+
+        const index = searchWord(z, a);
+
+        if (index !== -1) {
+            
+            document.write("the word is "+z+"was found at "+index+ "in sentence" )
+        } else {
+            document.write("The word "+a+"was not found in the sentence")
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

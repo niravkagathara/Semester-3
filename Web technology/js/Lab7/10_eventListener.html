@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="mybtn" >pop-up</button>
+    
+    <script>
+        function demo(){
+            confirm("hello");
+        }
+
+        // document.getElementById("mybtn").addEventListener('click',demo);
+
+
+        // Add event listeners to the document
+        document.addEventListener("mousedown", function (event) {
+            console.log(event);
+            if (event.button === 0) {
+                console.log("Left Clicked");
+            } else if (event.button === 2) {
+                console.log("Right Clicked");
+            }
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="text" id="searchText" onkeyup="displayFaculty()">
+	<input type="button" value="Add Faculty" onclick="addFaculty()">
+	<table id="ans">
+	</table>
+	<script type="text/javascript">
+		a = ['arjun',"gambhavasir",'gopimam','pradhyumansir']
+		function addFaculty(){
+			var st = document.getElementById('searchText').value;
+			a.unshift(st);
+			document.getElementById('searchText').value = "";
+			displayFaculty();
+		}
+		function displayFaculty(){
+			var st = document.getElementById('searchText').value;
+			var filteredA = a.filter((fac)=>{
+				if(fac.indexOf(st)>-1){
+					return true;
+				}
+				else{
+					return false;
+				}
+			})
+			var newA = filteredA.map((fac)=>{
+				return "<tr><td>"+fac+"</td><td><button onclick=deleteFaculty('"+fac+"')>delete</button></td><td><button>Edit</button></td></tr>";
+			});
+			document.getElementById('ans').innerHTML = newA.join(" ");
+		}
+		displayFaculty();
+
+		function deleteFaculty(fac){
+			index = a.indexOf(fac)
+			console.log(index)
+			a.splice(index,1)
+			displayFaculty();
+		}
+	</script>
+	
+	
+</body>
+</html>

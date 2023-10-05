@@ -1,0 +1,120 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=
+<title> 1"
+<gtytéesype="text/css">
+#myImgq{
+position: absolute;
+left: 500px;
+top:100px;
+}
+#khavanu{
+position: absolute;
+}
+</style>
+</head>
+<body onload="changeKhavanuPosition()">
+<input type="button" value="Move Left" onclick="startLeft()">
+<input type="button" value="Move Right" onclick="startRight()">
+<input type="button" value="Move onclick="startTop()">
+<input type="button" value=THpVe onclick="startBottom()">
+<br/> Bottom"
+<img  src="snakeR.png" id="myImg" />
+
+<img src="apple.png" id="khavanu">
+
+<script type="text/javascript">
+
+leftPos = 500;
+rightInt = 0;
+leftInt = 0;
+
+topPos= 100;
+topInt= 0;
+bottomInt = 0;
+
+function changeKhavanuPosition(){
+leftApple = Math.ceil(Math.random()*1500)+100
+topApple = Math.ceil(Math.random()*900)+100
+k = document.getElementById( 'khavanu')
+k.style.left = leftApple+"px";
+k.style.top = topApple+"px";
+
+function startLeft(){
+clearInterval(rightInt)
+clearInterval(leftInt)
+clearInterval(topInt)
+clearInterval(bottomInt)
+leftInt = setInterval(moveleft,1)
+
+}
+
+function startRight(){
+clearInterval(rightInt)
+clearInterval(leftInt)
+clearInterval(topInt)
+clearInterval(bottomInt)
+rightInt = setInterval(moveRight,1)
+
+function startTop(){
+clearInterval(topInt)
+clearInterval(bottomInt)
+clearInterval(rightInt)
+clearInterval(leftInt)
+topInt = setInterval(moveTop,1)
+
+}
+
+function startBottom(){
+clearInterval(rightInt)
+clearInterval(leftInt)
+clearInterval(topInt)
+clearInterval(bottomInt)
+bottomInt = setInterval(moveBottom,1)
+
+function movelLeft(){
+leftPos--;
+checkForKhavigy();
+if(leftPos<0){
+leftPos = screen.availWidth;
+
+i = document.getElementById( "myImg")
+i.src = "snakelL.png";
+i.style.left = leftPos+"px"
+
+function moveRight(){
+leftPos++;
+checkForKhavigy();
+if(leftPos>screen.availWidth){
+leftPos = 9;
+
+i = document.getElementById( "myImg")
+i.src = "snakeR.png";
+i.style.left = leftPos+"px"
+
+function moveTop(){
+topPos--;
+
+ checkForKhavigy();
+ i = document.getElementById( "myImg")
+ i.src = "snakeT.png";
+ i.style.top = topPos+"px"
+
+
+ function moveBottom(){
+ topPos++;
+ checkForKhavigy();
+ i = document.getElementById( "myImg")
+ i.src = "snakeB.png";
+ i.style.top = topPos+"px"
+ function checkForKhavigy(){
+ if (topApple==topPos && leftApple==leftPos){
+ document.write("<h1>Khavai gayu</h1>")
+
+ }
+ </script>
+ </body>
+ </html>
+
